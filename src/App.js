@@ -38,7 +38,7 @@ function App() {
       setNotes(
         notes.map((elem, index)=>{
           if (index === editId){
-            return ({...elem, title : inputList.title , textList : inputList.title })
+            return ({...elem, title : inputList.title , textList : inputList.textList })
           }
           return elem;
         })

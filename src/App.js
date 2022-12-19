@@ -58,11 +58,13 @@ function App() {
       setInputList("");
       setopenModal(false);
       toast.success("Notes Added Successfully", {
-        position: "top-center"
+        position: "top-center",
+        autoClose: 1000
       });
     }else {
       toast.error("Both field ar compulsory", {
-        position: "top-center"
+        position: "top-center",
+        autoClose: 1000
       });
     }
   }
@@ -84,7 +86,8 @@ function App() {
       })
     });
     toast.success("Notes removed", {
-      position: "top-center"
+      position: "top-center",
+      autoClose: 1000
     });
   };
   const editNote = (id) => {
